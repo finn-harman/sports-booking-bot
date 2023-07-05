@@ -64,10 +64,10 @@ const run = async (activity: Activity) => {
         await page.locator("#root > div.NavComponent__Wrapper-sc-1xjd6e5-0.LbEso > div > div > ul > li:nth-child(3) > button").click();
         
         // Enter email address
-        await page.locator("body > div:nth-child(5) > div.Modal__ModalWrapper-sc-2yutoc-0.jWYvtC.LoginContainer__StyledModal-sc-uwhb26-0.kUcjOZ > form > div:nth-child(1) > div > input").fill("finnharman@gmail.com");
+        await page.locator("body > div:nth-child(5) > div.Modal__ModalWrapper-sc-2yutoc-0.jWYvtC.LoginContainer__StyledModal-sc-uwhb26-0.kUcjOZ > form > div:nth-child(1) > div > input").fill("username");
         
         // Enter password
-        await page.locator("body > div:nth-child(5) > div.Modal__ModalWrapper-sc-2yutoc-0.jWYvtC.LoginContainer__StyledModal-sc-uwhb26-0.kUcjOZ > form > div:nth-child(2) > div > div > input").fill("8dK?fvQ9&S2.dDd");
+        await page.locator("body > div:nth-child(5) > div.Modal__ModalWrapper-sc-2yutoc-0.jWYvtC.LoginContainer__StyledModal-sc-uwhb26-0.kUcjOZ > form > div:nth-child(2) > div > div > input").fill("password");
         // Click log-in button
         await page.locator("body > div:nth-child(5) > div.Modal__ModalWrapper-sc-2yutoc-0.jWYvtC.LoginContainer__StyledModal-sc-uwhb26-0.kUcjOZ > form > div.SharedLoginComponent__ButtonWrap-sc-hdtxi2-4 > button > span").click();
     
