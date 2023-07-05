@@ -33,6 +33,7 @@ jobs:
           npx ncc build index.ts
           zip -j deploy.zip ./dist/*
           aws lambda update-function-code --function-name=better-health-booking-bot --zip-file=fileb://deploy.zip
+          aws events put-rule --schedule-expression=cron(0 10 * * ? *) --name=midnight-daily-cron-job
 
 
           
