@@ -31,8 +31,8 @@ jobs:
       - name: deploy
         run: |
           npx ncc build index.ts
-          # zip -j deploy.zip ./dist/*
-          # aws lambda update-function-code --function-name=better-health-booking-bot --zip-file=fileb://deploy.zip
+          zip -j deploy.zip ./dist/*
+          aws lambda update-function-code --function-name=better-health-booking-bot --zip-file=fileb://deploy.zip
 
 
           
