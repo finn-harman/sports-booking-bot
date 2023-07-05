@@ -25,6 +25,7 @@ jobs:
       - name: npm install and build
         env:
           CI: true
+          PUPPETEER_SKIP_DOWNLOAD: true
         run: |
           npm ci
       - name: deploy
