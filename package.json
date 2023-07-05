@@ -1,0 +1,10 @@
+{
+  "name": "sports-booking-bot",
+
+  "scripts": {
+    "start": "ts-node scraper.ts"
+  },
+  "dependencies": {
+    "puppeteer": "^20.7.4"
+  }
+}
